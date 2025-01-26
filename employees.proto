@@ -1,3 +1,15 @@
-syntex = "proto3";
+syntax = "proto3";
 
-message
+message Employee {
+    uint32 id =1;
+    string name = 2;
+    float salary = 3;   
+}
+
+
+message EmployeeList {
+    repeated Employee employees = 1;
+}
+
+
+
